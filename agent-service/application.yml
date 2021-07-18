@@ -1,15 +1,16 @@
+
 info:
-  author: Ravi
+  author: Sanjeet
   version: 1.0
-
- server:
-    port: 9090
- endpoint:
-    health:
-      show-details: "ALWAYS"
-
+  
+management:  
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"  
   endpoint:
     health:
-      show-details: always
+      show-details: "ALWAYS"
     shutdown:
       enabled: true
